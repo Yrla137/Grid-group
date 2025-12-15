@@ -5,4 +5,13 @@ body {
 }
 /*************************************************/
 
+.container{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	border: 1px solid black;
+	width: 600px;
 
+}
+.outline{
+	border: 1px solid black;
+}
