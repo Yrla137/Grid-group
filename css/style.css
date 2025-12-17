@@ -17,6 +17,20 @@ body {
 .container >*{
 	min-height: 200px
 }
+.header{
+	display: flex;
+	align-items: center;
+	padding: 4%;
+}
+.header nav{
+	display: flex;
+	gap: 2%;
+	width: 100%;
+}
+.header nav button:last-child{
+	margin-left: auto;
+}
+
 .outline{
 	border: 1px solid black;
 }
