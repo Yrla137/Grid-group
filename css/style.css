@@ -10,17 +10,19 @@ body {
 	grid-template-columns: repeat(12, 1fr);
 	
 	width: 89%;
-	gap: 2%;
+	column-gap: 2%;
+	row-gap: 20px;
 	/* grid-template-rows: 200px 200px 200px 200px; */
 	margin:auto;
 }
 .container >*{
-	min-height: 200px
+	min-height: 250px
 }
 .header{
 	display: flex;
 	align-items: center;
-	padding: 4%;
+	padding: 2%;
+	min-height: 100px;
 }
 .header nav{
 	display: flex;
@@ -48,10 +50,30 @@ header{
 }
 .content{
 	grid-column:1/10;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 15px;
+	padding: 2%;
+}
+.content section{
+	border: 1px solid black;
+	flex-basis: 30%;
+	flex-grow: 1;
+	min-width: 200px;
+	min-height: 100px;
 }
 .sidebar{
 	grid-column:10/13;
 }
+.sidebar nav{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 4%;
+}
+
 footer{
 	grid-column:1/13;
 	display: grid;
