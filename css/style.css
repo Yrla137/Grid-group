@@ -9,10 +9,9 @@ body {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	
-	width: 600px;
-	gap:30px;
-	grid-template-rows: 150px 150px 150px 150px;
-	width: 1200px;
+	width: 89%;
+	gap: 2%;
+	grid-template-rows: 200px 200px 200px 200px;
 	margin:auto;
 }
 .outline{
@@ -40,8 +39,13 @@ footer{
 	grid-column:1/13;
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
-	gap:30px;
+	gap: 2%;
 	border:1px solid black;
-	padding: 10px;
+	padding: 1%;
 	
+}
+
+
+@media (max-width:) {
+
 }
